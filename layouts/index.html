@@ -18,13 +18,11 @@
         </span>
         <div class="field">
           <div class="control">
-            <div class="testing">
-              <input class="input" type="email" placeholder="you@email.com" required>
-              <label>
-              <input type="submit" class="submit-button">
-                {{ partial "subscribe-button.svg" . }}
-              </label>
-            </div>
+            <input class="input" name="email" type="email" placeholder="you@email.com" required>
+            <label>
+            <input type="submit" class="submit-button">
+              {{ partial "subscribe-button.svg" . }}
+            </label>
           </div>
         </div>
       </form>
