@@ -1,0 +1,33 @@
+baseurl = "/" # Controls base URL
+languageCode = "en-US"
+title = "pingpong"
+paginate = 10 # Number of posts to show before paginating
+theme = "bulma"
+
+enableRobotsTXT = true # Suggested, it generates a robots.txt
+googleAnalytics = "UA-127130501-1" # Optional, add tracking Id for analytics
+SectionPagesMenu = "main" # Enable menu system for lazy bloggers
+
+[[menu.main]]
+  name = "about"
+  url = "/about/"
+  weight = 1
+
+[[menu.main]]
+  name = "twitter"
+  url = "https://twitter.com/usepingpong"
+  weight = 1
+
+[params]
+  description = "A Simple Blog with Bulma" # Suggested, controls default description meta and landing page
+  hide_author = false # Optional, set true to hide author name on posts
+  images = [] # Suggested, controls default OpenGraph images controls author name display on meta tag
+  noindex_kinds = [
+    "taxonomy",
+    "taxonomyTerm"
+  ]
+
+[params.seo.webmaster_verifications]
+  google = "" # Optional, Google verification code
+  bing = "" # Optional, Bing verification code
+  yandex = ""

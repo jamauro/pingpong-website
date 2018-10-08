@@ -1,0 +1,195 @@
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Sofia Pro', BlinkMacSystemFont, -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+
+/* used for pingpong logo in upper left */
+.is-centered {
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar-home {
+  background-color: #F2F5F7;
+}
+
+.navbar-item {
+  font-weight: 600;
+  color: rgba(38,52,74,.5);
+}
+
+.navbar-item span {
+  color: rgba(38,52,74,.5);
+}
+
+
+.navbar-brand a {
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.navbar-item span {
+  padding: 6px 8px;
+}
+
+.navbar-item span:hover {
+  background-color: rgba(0,0,0,0.05);
+  color: rgba(4,15,26,.6);
+  border-radius: 8px;
+  filter: none;
+}
+
+.navbar-item svg {
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+}
+
+.navbar-item span:hover svg #paddle {
+  fill:#FF3868;
+}
+
+.navbar-burger {
+  height: 4rem;
+  width: 4rem;
+}
+
+.navbar-burger span {
+  height: 2px;
+  border-radius: 1px;
+  color: #8C94A0; /* hex equivalent to rgba(38,52,74,.5) */
+}
+
+.hero {
+  background-color: #F2F5F7;
+}
+
+.hero .title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #3F4D58;
+}
+
+.hero .subtitle {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-top: -.5rem;
+  margin-bottom: 3rem;
+  color: #3F4D58;
+  max-width: 360px;
+}
+
+.hero p {
+  color: rgba(4, 15, 26, .4);
+  font-weight: 600;
+  margin-bottom: 1rem !important;
+}
+
+
+.hero-body {
+  background: url(../img/pingpong-background.svg) no-repeat bottom left;
+  background-size: contain;
+}
+
+.input {
+  height: 4rem;
+  box-shadow: none;
+  border: 4px solid #E5E5E5;
+  border-radius: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #3F4D58;
+}
+
+#subscribe .control {
+  max-width: 20rem;
+}
+
+#subscribe .control:hover {
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+}
+
+.input:hover {
+  border-color: #E5E5E5;
+}
+
+.input:focus {
+  border-color: #E5E5E5;
+  box-shadow: none;
+}
+
+#subscribe input[type="submit"] {display: none;}
+
+#subscribe:valid svg {
+  filter: none;
+}
+
+#subscribe svg {
+  filter: grayscale(100%);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.section {
+  padding: 6rem 1.5rem;
+}
+
+.benefits {
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.item {
+  padding: 4rem 0;
+}
+
+.footer {
+  padding: 18rem 1.5rem 6rem;
+  background-color: #F2F5F7;
+}
+
+.footer span {
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.footer svg {
+  height: 1rem;
+  width: 1rem;
+  color: #FF3868;
+}
+
+@media only screen and (max-width: 414px) {
+    .hero .container {
+      margin-top: -180px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .hero .container {
+        margin-top: -100px;
+    }
+    .hero .title {
+      font-size: 3rem;
+    }
+    .hero .subtitle {
+      font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1921px) {
+    .hero .container {
+      max-width: 1784px;
+    }
+}
+

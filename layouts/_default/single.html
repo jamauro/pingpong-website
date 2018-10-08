@@ -1,0 +1,25 @@
+{{ define "title" -}}
+  {{ .Title }} | {{ .Site.Title }}
+{{- end }}
+
+{{ define "header" }} {{ partial "menu" . }} {{ end }}
+
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column"></div>
+      <div class="column column is-half is-two-fifths-widescreen">
+        <div class="content is-large">
+          {{ .Content}}
+        </div>
+      </div>
+      <div class="column"></div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ define "footer" }}
+  {{ partial "footer" . }}
+{{ end }}

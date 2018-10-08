@@ -1,0 +1,56 @@
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "menu" .}} {{end}}
+
+{{ define "main" }}
+
+<section class="hero is-fullheight">
+  <div class="hero-body">
+    <div class="container content is-large">
+      <h1 class="title">pingpong</h1>
+      <h2 class="subtitle">the messaging app for productive teams</h2>
+            <!-- <figure class="image is-4by3">
+              <img class="lazyload" src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="Description">
+            </figure>  -->
+      <p>get early access</p>
+      <form id="subscribe" name="subscribe" method="POST" netlify-honeypot="bot-field" action="/thanks" netlify>
+        <span class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </span>
+        <div class="field">
+          <div class="control">
+            <div class="testing">
+              <input class="input" type="email" placeholder="you@email.com" required>
+              <label>
+              <input type="submit" class="submit-button">
+                {{ partial "subscribe-button.svg" . }}
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="benefits column content">
+        <div class="item">
+          <h1 class="is-size-1 has-text-link is-size-3-mobile">meaningful conversations</h1>
+          <p class="is-size-3 is-size-4-mobile">threads in pingpong keep conversations focused & prevent disconnected messages. take your time to formulate your thoughts and end the plague of one-line-at-a-time stream of consciousness.</p>
+        </div>
+        <div class="item">
+          <h1 class="is-size-1 has-text-link is-size-3-mobile">designed by makers for makers</h1>
+          <p class="is-size-3 is-size-4-mobile">focus on your work not the red notification badge. pingpong notifies you when it's important and encourages teammates to think before interrupting. check in with the conversations you care about, when <strong>you</strong> want to.</p>
+        </div>
+        <div class="item">
+          <h1 class="is-size-1 has-text-link is-size-3-mobile">communication without anxiety</h1>
+          <p class="is-size-3 is-size-4-mobile">pingpong eliminates the fear of missing out and the pressure to always be available and respond immediately. asynchronous communication is the default and, when it makes sense, it's easy to switch to synchronous with a smarter way to mention teammates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "footer" }} {{ partial "footer" .}} {{ end }}

@@ -1,0 +1,31 @@
+<nav class="navbar is-transparent {{ if .IsHome }}navbar-home{{ end }}">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{{.Site.BaseURL | relURL}}">
+      <span class="is-centered">
+      {{ partial "pingpong-logo.svg" . }} pingpong
+     </span>
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="navbar-menu" id="navbarExampleTransparentExample">
+    <div class="navbar-start">
+    </div>
+
+
+    <!-- This "nav-menu" is hidden on mobile -->
+    <!-- Add the modifier "is-active" to display it on mobile -->
+    <div class="navbar-end">
+      <div class="navbar-item">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          <a itemprop="url" class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{end}}" href="{{.URL}}"><span itemprop="name">{{ .Name }}</span></a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</nav>
