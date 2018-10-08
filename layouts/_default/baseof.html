@@ -43,6 +43,7 @@
     {{else}}
       <link rel="stylesheet" href="/css/bulma.css">
     {{end}}
+    <link rel="stylesheet" href="/css/font.css">
     <link rel="stylesheet" href="/css/style.css"> {{ block "style" .}} {{end}} {{ $lazylist := findRE "class=\".*?\\blazyload\\b.*?\"|class=lazyload\b" .Content }}
     <!-- http://regexr.com/3f9d1 -->
     {{ if ge (len $lazylist) 1 }}
