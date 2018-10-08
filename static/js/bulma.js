@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add a click event on each of them
     $navbarBurgers.forEach( el => {
-      el.addEventListener('click', () => {
+      el.addEventListener('touchstart', () => {
 
         // Get the target from the "data-target" attribute
         const target = el.dataset.target;
