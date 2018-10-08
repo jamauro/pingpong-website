@@ -1,33 +1,33 @@
 @font-face {
-  font-family: 'Sofia Pro Black';
+  font-family: 'Sofia Pro';
   src: url('../font/SofiaPro-Black.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sofia Pro Bold';
+  font-family: 'Sofia Pro';
   src: url('../font/SofiaPro-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sofia Pro Semi Bold';
+  font-family: 'Sofia Pro Semi';
   src: url('../font/SofiaPro-SemiBold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sofia Pro Medium';
+  font-family: 'Sofia Pro';
   src: url('../font/SofiaPro-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sofia Pro Regular';
+  font-family: 'Sofia Pro';
   src: url('../font/SofiaPro-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
