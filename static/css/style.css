@@ -57,6 +57,10 @@ textarea {
   fill:#FF3868;
 }
 
+.navbar-home span svg #paddle {
+  fill: #8C94A0;
+}
+
 .navbar-burger {
   height: 4rem;
   width: 4rem;

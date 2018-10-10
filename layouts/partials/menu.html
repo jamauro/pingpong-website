@@ -23,7 +23,9 @@
       <div class="navbar-item">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
-          <a itemprop="url" class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{end}}" href="{{.URL}}"><span itemprop="name">{{ .Name }}</span></a>
+          {{ $url := urls.Parse .URL }} <!-- used to set up target="_blank" -->
+          {{ $baseurl := urls.Parse $.Site.Params.Baseurl }} <!-- used to set up target="_blank" -->
+          <a itemprop="url" class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{end}}" href="{{.URL}}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span itemprop="name">{{ .Name }}</span></a>
         {{ end }}
       </div>
     </div>
