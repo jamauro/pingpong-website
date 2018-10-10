@@ -10,7 +10,7 @@ weight = 2
 
 at pingpong, we're excited to help create a future where anyone can work from anywhere and still be part of a highly productive team.
 
-solving hard problems with creative solutions requires extended periods of focus. the problem with current messaging apps is they steal our time and attention, making it difficult to do our best work. we're creating pingpong to be the antidote to the always-on, anxiety-inducing, endlessly-distracting communication tools.
+solving hard problems with creative solutions requires extended periods of focus. the problem with current messaging apps is they steal our time and attention, making it difficult to do our best work. pingpong is the antidote to the endlessly-distracting, anxiety-inducing communication tools.
 
 we're headquartered in austin, tx but we believe strongly in the importance of remote teams to the future of our society. making tools to help remote teams is one of our driving forces. our messaging app is just the beginning.
 
