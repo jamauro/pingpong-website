@@ -6,6 +6,17 @@ textarea {
   font-family: 'Sofia Pro', BlinkMacSystemFont, -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+/* used for sticky footer */
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* used for sticky footer */
+.Site-content {
+  flex: 1;
+}
 
 /* used for pingpong logo in upper left */
 .is-centered {
