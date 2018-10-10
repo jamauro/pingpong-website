@@ -10,7 +10,7 @@ noindex = true
 
 one more thing before you go...
 
-we'd really appreciate your help in getting the word out. if you'll send pingpong to at least **5 people**, that'd go a long way. :)
+we'd really appreciate your help in getting the word out. if you'll share pingpong with your friends and other like-minded folks, that'd go a long way. :)
 
 here are a couple of quick ways to share:
 
