@@ -19,7 +19,7 @@ SectionPagesMenu = "main" # Enable menu system for lazy bloggers
   weight = 1
 
 [params]
-  description = "A Simple Blog with Bulma" # Suggested, controls default description meta and landing page
+  description = "the messaging app for productive teams" # Suggested, controls default description meta and landing page
   hide_author = false # Optional, set true to hide author name on posts
   images = [] # Suggested, controls default OpenGraph images controls author name display on meta tag
   noindex_kinds = [
