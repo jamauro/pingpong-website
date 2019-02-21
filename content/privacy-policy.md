@@ -118,7 +118,7 @@ weight = 2
 
 <h2 id="contact">Contacting pingpong</h2>
 
-<p>Please also feel free to contact pingpong if you have any questions about this Privacy Policy or pingpong’s practices, or if you are seeking to exercise any of your statutory rights. You may contact us at <a href="mailto:privacy@pingpong.com">privacy@pingpong.com</a> or at our mailing address below:</p>
+<p>Please also feel free to contact pingpong if you have any questions about this Privacy Policy or pingpong’s practices, or if you are seeking to exercise any of your statutory rights. You may contact us at <a href="mailto:privacy@usepingpong.com">privacy@usepingpong.com</a> or at our mailing address below:</p>
 
 <p>
   pingpong LLC<br>
