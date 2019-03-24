@@ -6,6 +6,10 @@ textarea {
   font-family: 'Sofia Pro', BlinkMacSystemFont, -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+p {
+  font-size: 20px;
+}
+
 /* used for sticky footer */
 .Site {
   display: flex;
@@ -29,11 +33,11 @@ textarea {
 }
 
 .navbar-home {
-  background-color: #F2F5F7;
+  /* background-color: #F2F5F7; */
 }
 
 .navbar-item {
-  font-weight: 600;
+  font-weight: 500;
   color: rgba(38,52,74,.5);
 }
 
@@ -43,7 +47,7 @@ textarea {
 
 
 .navbar-brand a {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.25rem;
 }
 
@@ -84,34 +88,89 @@ textarea {
 }
 
 .hero {
-  background-color: #F2F5F7;
+  /* background-color: #F2F5F7; */
+  /* min-height: 124vh; */
+}
+
+.hero .columns {
+  margin-left: 0; /* otherwise there will be a weird right gutter */
+  margin-right: 0; /* otherwise there will be a weird right gutter */
 }
 
 .hero .title {
-  font-size: 4.5rem;
-  font-weight: 900;
+  /* font-size: 4.5rem; */
+  font-size: 40px;
+  font-weight: 600;
   color: #3F4D58;
+  max-width: 608px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero .subtitle {
-  font-size: 2.25rem;
-  font-weight: 600;
-  margin-top: -.5rem;
-  margin-bottom: 3rem;
+  /* font-size: 2.25rem; */
+  font-weight: 700;
+  /* margin-top: -.5rem;
+  margin-bottom: 3rem; */
   color: #3F4D58;
   max-width: 360px;
 }
 
-.hero p {
-  color: rgba(4, 15, 26, .4);
-  font-weight: 600;
-  margin-bottom: 1rem !important;
-}
-
 
 .hero-body {
-  background: url(../img/pingpong-background.svg) no-repeat bottom left;
-  background-size: contain;
+  /* background: url(../img/table.svg); */
+  background-size: cover;
+  margin-top: 124px;
+  margin-bottom: 124px;
+  background-position-y: 192px;
+  z-index: 10;
+}
+
+.early-access {
+  color: rgba(4, 15, 26, .4);
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 1rem !important;
+  text-align: center;
+}
+
+.product {
+  background: url(../img/table.svg) no-repeat;
+  background-size: cover;
+  transform: skewY(17deg);
+  background-color: #47A1FF;
+  min-height: 100vh;
+  height: 100vw;
+}
+
+.product .container {
+  margin-top: 25%;
+  transform: skewY(-17deg);
+}
+
+.product .container .content {
+  color: #fff;
+  margin-top: -20vw;
+  padding: 0 1rem;
+}
+
+.product .content h1 {
+  color: #fff;
+}
+
+.message {
+  margin: 400px auto;
+  max-width: 760px;
+}
+.message.is-info .message-body {
+  border-color: #47A1FF;
+  color: #3273DC;
+  font-size: 2rem;
+  border-left: 4px solid #47A1FF;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 4px;
 }
 
 .input {
@@ -125,12 +184,13 @@ textarea {
 }
 
 #subscribe .control {
-  max-width: 20rem;
+  max-width: 22rem;
+  margin: 0 auto;
 }
 
 #subscribe .control:hover {
   border-radius: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0,0,0, 0.1); */
 }
 
 .input:hover {
@@ -146,12 +206,15 @@ textarea {
 
 #subscribe:valid svg {
   filter: none;
+  opacity: 1;
 }
 
 #subscribe svg {
   filter: grayscale(100%);
+  opacity: 0.5;
+  padding: 1px; /* there was clipping without this */
   position: absolute;
-  top: 12px;
+  top: 11px;
   right: 12px;
 }
 
@@ -160,17 +223,133 @@ textarea {
 }
 
 .benefits {
-  max-width: 770px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.item {
-  padding: 4rem 0;
+.benefits h1 {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-bottom: 176px;
 }
 
+.benefits h3 {
+  font-weight: 700;
+}
+
+.item {
+  padding: 4rem;
+}
+
+.item p {
+  max-width: 360px;
+}
+
+.number {
+  height: 48px;
+  width: 48px;
+  min-width: 48px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border: 4px solid;
+  background-color: transparent;
+}
+
+.first h3 {
+  color: #209CEE;
+}
+
+.first .number {
+  color: #209CEE;
+}
+
+.second h3 {
+  color: #00D1B2;
+}
+
+.second .number {
+  color: #00D1B2;
+}
+
+.third h3 {
+  color: #FF9C33;
+}
+
+.third .number {
+  color: #FF9C33;
+}
+
+.third svg {
+  vertical-align: middle;
+  stroke-width: 4px;
+}
+
+.fourth h3 {
+  color: #B86BFF;
+}
+
+.fourth .number {
+  color: #B86BFF;
+}
+
+.macbook {
+  margin-top: 400px;
+}
+
+.macbook {
+  background: linear-gradient(to top, #47A1FF 0%, #47A1FF 80%, #fff 80%, #fff 100%);
+  background: -webkit-linear-gradient(top, #47A1FF 0%, #47A1FF 80%, #fff 80%, #fff 100%);
+}
+
+/* .macbook:before {
+  position: fixed;
+  z-index: -1;
+  top: 0
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #47A1FF;
+} */
+
+.macbook .image {
+  margin-top: -600px;
+}
+
+.macbook .column {
+  padding: 0;
+}
+
+#pricing p {
+  max-width: 448px;
+  margin: 0 auto;
+}
+
+#pricing .early-access {
+  margin-top: 4rem;
+}
+
+
+
+
 .footer {
-  padding: 18rem 1.5rem 6rem;
-  background-color: #F2F5F7;
+  padding: 40rem 1.5rem 4rem;
+  background-color: #fff;
+  background: url(../img/big-ball.svg) bottom left no-repeat;
+  background-size: contain;
+  margin-top: 10rem;
+}
+
+.footer a {
+  padding: 0.5rem;
+  color: #b5b5b5;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  background-color: rgba(0,0,0,0.05);
+  color: rgba(4,15,26,.6);
+  border-radius: 8px;
 }
 
 .footer span {
@@ -184,21 +363,45 @@ textarea {
   color: #FF3868;
 }
 
-@media only screen and (max-width: 414px) {
-    .hero .container {
-      margin-top: -180px;
-    }
-}
 
-@media only screen and (max-width: 320px) {
-    .hero .container {
-        margin-top: -100px;
-    }
+@media only screen and (max-width: 414px) {
     .hero .title {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     .hero .subtitle {
       font-size: 1.5rem;
+    }
+
+    .product .container {
+      margin-top: 40%;
+    }
+
+    .message {
+      margin: 192px auto;
+    }
+
+    .message.is-info .message-body {
+      font-size: 1.5rem;
+    }
+
+    .benefits h1 {
+      margin-bottom: 88px;
+    }
+
+    .item {
+      padding: 2rem 1rem;
+    }
+
+    .macbook {
+      margin-top: 192px;
+    }
+
+    .macbook .image {
+      margin-top: -200px;
+    }
+
+    .footer {
+      padding: 8rem 1.5rem 2rem;
     }
 }
 

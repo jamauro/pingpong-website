@@ -3,50 +3,88 @@
 
 {{ define "main" }}
 
-<section class="hero is-fullheight">
+<section class="hero">
   <div class="hero-body">
-    <div class="container content is-large">
-      <h1 class="title">pingpong</h1>
-      <h2 class="subtitle">the messaging app for productive teams</h2>
+    <div class="container has-text-centered content">
+      <h1 class="title">the messaging app for productive teams</h1>
             <!-- <figure class="image is-4by3">
               <img class="lazyload" src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="Description">
             </figure>  -->
-      <p>get early access</p>
-      <form id="subscribe" name="subscribe" method="POST" netlify-honeypot="bot-field" action="/thanks" netlify>
-        <span class="hidden">
-          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-        </span>
-        <div class="field">
-          <div class="control">
-            <input class="input" name="email" type="email" placeholder="you@email.com" required>
-            <label>
-            <input type="submit" class="submit-button">
-              {{ partial "subscribe-button.svg" . }}
-            </label>
-          </div>
-        </div>
-      </form>
+      {{ partial "subscribe-form" . }}
+    </div>
+  </div>
+</section>
+<section class="hero product">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+      </div>
+      <div class="column is-four-fifths">
+        <figure class="image">
+          <img class="lazyload" src="../img/phone.png" alt="Description">
+        </figure>
+      </div>
+    </div>
+    <div class="content">
+      <h1>something provactive</h1>
+      <p>put supporting text here that is short and sweet</p>
     </div>
   </div>
 </section>
 <section class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="benefits column content">
-        <div class="item">
-          <h1 class="is-size-1 has-text-link is-size-3-mobile">made for meaningful convos</h1>
-          <p class="is-size-3 is-size-4-mobile">threads in pingpong keep conversations focused & prevent disconnected messages. take your time to formulate your thoughts and end the plague of one-line-at-a-time stream of consciousness.</p>
-        </div>
-        <div class="item">
-          <h1 class="is-size-1 has-text-link is-size-3-mobile">designed by makers for makers</h1>
-          <p class="is-size-3 is-size-4-mobile">focus on your work not the red notification badge. pingpong notifies you when it's important and encourages teammates to think before interrupting. check in with the conversations you care about, when <strong>you</strong> want to.</p>
-        </div>
-        <div class="item">
-          <h1 class="is-size-1 has-text-link is-size-3-mobile">communication without anxiety</h1>
-          <p class="is-size-3 is-size-4-mobile">pingpong eliminates the fear of missing out and the pressure to always be available and respond immediately. asynchronous communication is the default and, when it makes sense, it's easy to switch to synchronous with a smarter way to mention teammates.</p>
-        </div>
+  <article class="message is-info">
+    <div class="message-body">
+      the best parts of email and chat combined into something far more powerful &mdash; built so you can <strong>focus on your actual work, not a barrage of notifications and distractions</strong>
+    </div>
+  </article>
+</section>
+<section class="section">
+  <div class="container benefits">
+    <h1 class="is-size-1 has-text-centered has-text-link is-size-3-mobile">four things you should know about pingpong</h1>
+    <div class="columns content">
+      <div class="item column first">
+        <div class="number">1</div>
+        <h3>deep work is the priority</h3>
+        <p>we want to enable you to focus on your work, not a notification badge. most messages can wait, but if you really need someone urgently, you can ping them. for any other mention, there are lobs – a silent mention if you will.</p>
+      </div>
+      <div class="item column second">
+        <div class="number">2</div>
+        <h3>context is king, long live threads</h3>
+        <p>threads keep people focused on the conversation at hand and avoid divergent, side-tracking interjections. thread summaries let you know if a conversation is worth participating in or not.</p>
       </div>
     </div>
+    <div class="columns benefits content">
+      <div class="item column third">
+        <div class="number">3</div>
+        <h3>async {{ partial "chevron-right.svg" . }} sync communication</h3>
+        <p>we believe async communication is a better, calmer way to get things done. but there are times when it makes sense to go synchronous and pingpong switches between the two seamlessly.</p>
+      </div>
+      <div class="item column fourth">
+        <div class="number">4</div>
+        <h3>no fomo, no anxiety</h3>
+        <p>we got rid of that horrible green dot that indicates you’re “there”, available for interruptions. unreads are grouped sensibily – separated into replies in threads you care about & new threads.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hero macbook">
+    <div class="columns">
+      <div class="column">
+      </div>
+      <div class="column is-four-fifths">
+        <figure class="image">
+          <img class="lazyload" src="../img/macbook.png" alt="Description">
+        </figure>
+      </div>
+    </div>
+</section>
+<section id="pricing" class="section">
+  <div class="container content has-text-centered">
+    <h1 class="is-size-1 has-text-link is-size-3-mobile">try it free for 14 days</h1>
+    <p>take pingpong for a spin with a free, 14-day trial. after that it’s just $6 per teammate per month.
+      <br> <strong>unlimited everything.</strong>
+    </p>
+    {{ partial "subscribe-form" . }}
   </div>
 </section>
 {{ end }}

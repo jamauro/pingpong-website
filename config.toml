@@ -14,6 +14,11 @@ SectionPagesMenu = "main" # Enable menu system for lazy bloggers
   weight = 1
 
 [[menu.main]]
+  name = "pricing"
+  url = "/#pricing"
+  weight = 1
+
+[[menu.main]]
   name = "twitter"
   url = "https://twitter.com/usepingpong"
   weight = 1
