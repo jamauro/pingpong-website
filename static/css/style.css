@@ -152,10 +152,12 @@ p {
   color: #fff;
   margin-top: -20vw;
   padding: 0 1rem;
+  max-width: 400px;
 }
 
 .product .content h1 {
   color: #fff;
+  font-weight: 600;
 }
 
 .message {
