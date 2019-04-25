@@ -50,5 +50,18 @@ Open Safari and sign in to pingpong. Then click the middle share button at the b
 
 Open the browser and sign in to pingpong. Click the menu button in the upper right, then click 'Add to Home screen'.
 
+## do you have keyboard shortcuts?
+We're glad you asked. Here's a list of handy keyboard shortcuts:
+
+`⌘ j` — create a new thread
+
+`⌘ k` — launch quick find
+
+`⌘ enter` — send a new reply or new thread
+
+`⌘ d` — toggle dark mode
+
+`esc` — exit the conversation view
+
 ## have another question?
 We're here to help. Send us a note at <a class="has-text-info" href="mailto:support@usepingpong.com">support@usepingpong.com</a>.
