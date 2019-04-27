@@ -4,7 +4,7 @@ description ="frequently asked questions"
 weight = 2
 +++
 
-# faq
+# frequently asked questions
 
 ## what’s a court?
 A court is a way for you to organize your conversations into specific topics or groups. For example, if you, Jane, and Mark are all working on the same project, you might want to create a court for just the three of you to discuss project-specific ideas and give it a name like "top secret project".
