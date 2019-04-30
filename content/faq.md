@@ -9,9 +9,11 @@ weight = 2
 ## what’s a court?
 A court is a way for you to organize your conversations into specific topics or groups. For example, if you, Jane, and Mark are all working on the same project, you might want to create a court for just the three of you to discuss project-specific ideas and give it a name like "top secret project".
 
-If you wanted one place to have discussions about puppy pictures, you could create the court “awesome puppy pics”. Within that court you can have multiple conversations, but they all pertain to that same topic (e.g. one conversation about dogs on skateboards, another conversation about dogs in hats, but both within the “awesome puppy pics” court).
+If you wanted one place to have discussions about marketing, you could create the court “marketing”. Within that court you can have multiple conversations, but they all pertain to marketing (e.g. one conversation about upcoming events, another conversation about a new press release, but both within the “marketing” court).
 
 If you have 5 or more people in a court, you’ll need to give a name to help provide context.
+
+By default, everyone is added to two courts when they join a team — "everyone" and "random".
 
 **Closed versus Open**
 
