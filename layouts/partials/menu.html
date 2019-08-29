@@ -1,33 +1,38 @@
-<nav class="navbar is-transparent {{ if .IsHome }}navbar-home{{ end }}">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="{{.Site.BaseURL | relURL}}">
-      <span class="is-centered">
-      {{ partial "pingpong-logo.svg" . }} pingpong
-     </span>
-    </a>
-    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-
-  <div class="navbar-menu" id="navbarExampleTransparentExample">
-    <div class="navbar-start">
-    </div>
-
-
-    <!-- This "nav-menu" is hidden on mobile -->
-    <!-- Add the modifier "is-active" to display it on mobile -->
-    <div class="navbar-end">
-      <div class="navbar-item">
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-          {{ $url := urls.Parse .URL }} <!-- used to set up target="_blank" -->
-          {{ $baseurl := urls.Parse $.Site.Params.Baseurl }} <!-- used to set up target="_blank" -->
-          <a itemprop="url" class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{end}}" href="{{.URL}}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span itemprop="name">{{ .Name }}</span></a>
-        {{ end }}
+<div class="container">
+  <div class="wrapper">
+    <nav class="navbar is-transparent {{ if .IsHome }}navbar-home{{ end }}">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="{{.Site.BaseURL | relURL}}">
+          <span class="is-centered">
+          {{ partial "pingpong-logo.svg" . }} pingpong
+         </span>
+        </a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-    </div>
+
+      <div class="navbar-menu" id="navbarExampleTransparentExample">
+        <div class="navbar-start">
+        </div>
+
+
+        <!-- This "nav-menu" is hidden on mobile -->
+        <!-- Add the modifier "is-active" to display it on mobile -->
+        <div class="navbar-end">
+          <div class="navbar-item">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+              {{ $url := urls.Parse .URL }} <!-- used to set up target="_blank" -->
+              {{ $baseurl := urls.Parse $.Site.Params.Baseurl }} <!-- used to set up target="_blank" -->
+              <a itemprop="url" class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{end}}" href="{{.URL}}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span itemprop="name">{{ .Name }}</span></a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
-</nav>
+</div>
+

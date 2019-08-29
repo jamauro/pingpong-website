@@ -6,8 +6,21 @@ textarea {
   font-family: 'Sofia Pro', BlinkMacSystemFont, -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+
 p {
   font-size: 20px;
+  line-height: 1.8;
+}
+
+.content h1 {
+  font-size: 3rem;
 }
 
 /* used for sticky footer */
@@ -20,6 +33,14 @@ p {
 /* used for sticky footer */
 .Site-content {
   flex: 1;
+}
+
+.wrapper {
+  display: block;
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.25rem;
 }
 
 /* used for pingpong logo in upper left */
@@ -38,11 +59,11 @@ p {
 
 .navbar-item {
   font-weight: 500;
-  color: rgba(38,52,74,.5);
+  color: rgba(0,0,0,.4); /* rgba(38,52,74,.5); */
 }
 
 .navbar-item span {
-  color: rgba(38,52,74,.5);
+  color: rgba(0,0,0,.4); /* rgba(38,52,74,.5); */
 }
 
 
@@ -56,8 +77,8 @@ p {
 }
 
 .navbar-item span:hover {
-  background-color: rgba(0,0,0,0.05);
-  color: rgba(4,15,26,.6);
+  background-color: whitesmoke; /* rgba(0,0,0,0.05); */
+  color: rgba(0,0,0,.5); /* rgba(4,15,26,.6); */
   border-radius: 8px;
   filter: none;
 }
@@ -98,10 +119,10 @@ p {
 }
 
 .hero .title {
-  /* font-size: 4.5rem; */
-  font-size: 40px;
-  font-weight: 600;
-  color: #3F4D58;
+  /* font-size: 4.5rem;
+  /* font-size: 40px;
+  color: #3F4D58; */
+  font-weight: 500;
   max-width: 608px;
   margin-left: auto;
   margin-right: auto;
@@ -127,7 +148,7 @@ p {
 }
 
 .early-access {
-  color: rgba(4, 15, 26, .4);
+  color: rgba(0, 0, 0, .4); /* rgba(4, 15, 26, .4); */
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 1rem !important;
@@ -137,27 +158,61 @@ p {
 .product {
   background: url(../img/table.svg) no-repeat;
   background-size: cover;
-  transform: skewY(17deg);
+  transform: skewY(10deg);
   background-color: #47A1FF;
   min-height: 100vh;
   height: 100vw;
 }
 
 .product .container {
-  margin-top: 25%;
-  transform: skewY(-17deg);
+  margin-top: auto;
+  margin-bottom: auto;
+  transform: skewY(-10deg);
 }
 
 .product .container .content {
   color: #fff;
   margin-top: -20vw;
-  padding: 0 1rem;
-  max-width: 400px;
+  max-width: 540px;
 }
 
 .product .content h1 {
   color: #fff;
-  font-weight: 600;
+  /* font-weight: 600; */
+}
+
+.product .image {
+  max-width: 1000px;
+  margin-left: auto;
+}
+
+.description img {
+  max-height: 44rem;
+  width: auto;
+  z-index: -1;
+  margin-right: 6rem;
+}
+
+.description .content {
+  max-width: 35rem;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.item.right {
+  flex-direction: row-reverse;
+}
+
+.item.right img {
+  margin-left: 0;
+  margin-right: 0;
+  mask-image: linear-gradient(right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 60%);
+  -webkit-mask-image: -webkit-linear-gradient(right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 60%);
 }
 
 .message {
@@ -182,7 +237,7 @@ p {
   border-radius: 1.5rem;
   font-size: 1.25rem;
   font-weight: 600;
-  color: #3F4D58;
+  color: #4A4A4A; /*#3F4D58;*/
 }
 
 #subscribe .control {
@@ -221,7 +276,29 @@ p {
 }
 
 .section {
-  padding: 6rem 1.5rem;
+  padding: 6rem 0rem;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+
+.features .content h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.features .content p {
+  font-size: 1rem;
+  color: gray;
+}
+
+.features-item {
+  width: 22rem;
+  margin-bottom: 7rem !important;
 }
 
 .benefits {
@@ -239,13 +316,13 @@ p {
   font-weight: 700;
 }
 
-.item {
+/* .item {
   padding: 4rem;
 }
 
 .item p {
   max-width: 360px;
-}
+} */
 
 .number {
   height: 48px;
@@ -295,12 +372,13 @@ p {
 }
 
 .macbook {
-  margin-top: 400px;
+  margin-top: 188px;
 }
 
 .macbook {
-  background: linear-gradient(to top, #47A1FF 0%, #47A1FF 80%, #fff 80%, #fff 100%);
-  background: -webkit-linear-gradient(top, #47A1FF 0%, #47A1FF 80%, #fff 80%, #fff 100%);
+  /* background: linear-gradient(to top, #47A1FF 0%, #47A1FF 80%, #fff 80%, #fff 100%);
+  background: -webkit-linear-gradient(top, #47A1FF 0%, #47A1FF 80%, #fff 80%, #fff 100%); */
+  background-color: #47A1FF;
 }
 
 /* .macbook:before {
@@ -322,8 +400,27 @@ p {
   padding: 0;
 }
 
+.quote {
+  max-width: 35rem;
+  margin-top: -120px;
+  padding-bottom: 11rem;
+  color: #fff;
+}
+
+.quote h1 {
+  color: #fff;
+}
+
+.quote .source {
+  opacity: 0.75;
+}
+
+#pricing {
+  padding-top: 12rem;
+}
+
 #pricing p {
-  max-width: 448px;
+  max-width: 480px;
   margin: 0 auto;
 }
 
@@ -339,7 +436,7 @@ p {
   background-color: #fff;
   background: url(../img/big-ball.svg) bottom left no-repeat;
   background-size: contain;
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 .footer a {
@@ -366,7 +463,15 @@ p {
 }
 
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 768px) {
+    header .wrapper {
+      padding: 0;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+    }
+
     .hero .title {
       font-size: 2rem;
     }
@@ -374,8 +479,9 @@ p {
       font-size: 1.5rem;
     }
 
-    .product .container {
-      margin-top: 40%;
+
+    .product .container .content {
+      margin-top: 0;
     }
 
     .message {
@@ -391,20 +497,74 @@ p {
     }
 
     .item {
-      padding: 2rem 1rem;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 4rem;
+      /* padding: 2rem 1rem; */
+    }
+
+    .item .image {
+      padding-bottom: 2rem;
+    }
+
+    .item.right {
+      flex-direction: column;
+    }
+
+    .item.right .image {
+      padding-bottom: 1rem;
+    }
+
+    .features {
+      padding-top: 2rem;
+    }
+
+    .features-item {
+      margin-bottom: 2.5rem !important;
     }
 
     .macbook {
-      margin-top: 192px;
+      margin-top: 0;
     }
 
     .macbook .image {
       margin-top: -200px;
     }
 
+    .quote {
+      margin-top: 0;
+      padding-bottom: 4rem;
+    }
+
+    #pricing {
+      padding-top: 6rem;
+      padding-bottom: 0;
+    }
+
     .footer {
       padding: 8rem 1.5rem 2rem;
     }
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar-item {
+    padding: 0.5rem 0;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .product {
+    height: 80vw;
+  }
+
+  .product .container .content {
+    color: #fff;
+    margin-top: -15vw;
+    max-width: 540px;
+  }
 }
 
 @media only screen and (min-width: 1921px) {
