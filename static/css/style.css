@@ -94,7 +94,7 @@ p {
 }
 
 .navbar-home span svg #paddle {
-  fill: #8C94A0;
+  fill: #999999; /* #8C94A0; */
 }
 
 .navbar-burger {
@@ -105,7 +105,7 @@ p {
 .navbar-burger span {
   height: 2px;
   border-radius: 1px;
-  color: #8C94A0; /* hex equivalent to rgba(38,52,74,.5) */
+  color: #999999; /* #8C94A0 hex equivalent to rgba(38,52,74,.5) */
 }
 
 .hero {
