@@ -468,6 +468,11 @@ p {
       padding: 0;
     }
 
+    .hero-body {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
     .content h1 {
       font-size: 2rem;
     }
