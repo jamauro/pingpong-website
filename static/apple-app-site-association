@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "69879Q6Z4H.com.usepingpong.pingpong",
+        "paths": [
+          "*",
+          "/"
+        ]
+      }
+    ]
+  }
+}
