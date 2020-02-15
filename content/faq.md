@@ -42,11 +42,11 @@ Looking for something quickly? Quick Find will show your five most recently visi
 As an admin, you can add teammates by clicking on your team's name in the upper left, then click "adminland", then click "manage teammates". You can enter a comma-separated list of email addresses (e.g. `jane@acme.com, mark@acme.com`) to send your teammates an invite to join.
 
 ## does pingpong have a mobile app?
-Currently, pingpong is a progressive web app. This means you can add it to your homescreen without needing to go to an App Store to download.
+Yes! We have an iOS app and for Android you can add it to your homescreen without needing to go to the Google Play store to download.
 
 **For iOS**
 
-Open Safari and sign in to pingpong. Then click the middle share button at the bottom. Scroll until you see 'Add to Homescreen'.
+[Download from the App Store](https://apps.apple.com/us/app/pingpong-team-communication/id1486110724)
 
 **For Android**
 
