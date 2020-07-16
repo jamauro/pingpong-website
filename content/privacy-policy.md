@@ -6,7 +6,7 @@ weight = 2
 
 # privacy policy
 
-<p><strong>Effective: January 31, 2019</strong></p>
+<p><strong>Effective: January 31, 2020</strong></p>
 
 <p>This Privacy Policy describes how pingpong collects, uses and discloses information, and what choices you have with respect to the information.</p>
 <p>Updates in this version of the Privacy Policy reflect changes in data protection law. In addition, we have worked to make the Privacy Policy clearer and more understandable by:</p>
@@ -100,7 +100,7 @@ weight = 2
 </ul>
 
 <h2 id="security">Security</h2>
-<p>pingpong takes security of data very seriously. pingpong works hard to protect Other Information you provide from loss, misuse, and unauthorized access or disclosure. These steps take into account the sensitivity of the Other Information we collect, process and store, and the current state of technology. Given the nature of communications and information processing technology, pingpong cannot guarantee that Information, during transmission through the Internet or while stored on our systems or otherwise in our care, will be absolutely safe from intrusion by others.</p>
+<p>pingpong takes security of data very seriously. we encrypt data at-rest and in-transit via TLS encryption. pingpong works hard to protect Other Information you provide from loss, misuse, and unauthorized access or disclosure. These steps take into account the sensitivity of the Other Information we collect, process and store, and the current state of technology.</p>
 
 <h2 id="limitations">Age Limitations</h2>
 <p>To the extent prohibited by applicable law, pingpong does not allow use of our Services and Websites by anyone younger than 16 years old. If you learn that anyone younger than 16 has unlawfully provided us with personal data, please contact us and we will take steps to delete such information.</p>

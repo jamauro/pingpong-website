@@ -1,12 +1,12 @@
 +++
-title = "terms of use"
-description ="our terms of use"
+title = "terms of service"
+description ="our terms of service"
 weight = 2
 +++
 
-# terms of use
+# terms of service
 
-<p><strong>Effective: January 31, 2019</strong></p>
+<p><strong>Effective: January 31, 2020</strong></p>
 <p>These Terms of Service (the “<strong>Terms</strong>”) describe your rights and responsibilities when using our online workplace productivity tools and platform (the “<strong>Services</strong>”). Please read them carefully. If you are a Customer (defined below), these Terms govern your access and use of our Services. If you are being invited to a team set up by a Customer, these Terms also govern your access and use of the Services. We're happy you’re here.</p>
 <h2>First Things First</h2>
 
